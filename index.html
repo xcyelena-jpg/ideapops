@@ -13,7 +13,8 @@
     <!-- Icons -->
     <link rel="icon" href="icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="icon.svg">
-    <link rel="manifest" href="manifest.json">
+    <!-- Added version query to force iOS to re-fetch the manifest -->
+    <link rel="manifest" href="manifest.json?v=force_update_final">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,7 +64,6 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>

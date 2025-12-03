@@ -10,11 +10,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="IdeaPops">
     
-    <!-- Icons -->
-    <link rel="icon" href="icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.svg">
+    <!-- Icons (Using relative paths ./ is crucial) -->
+    <link rel="icon" href="./icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./icon.svg">
     <!-- Added version query to force iOS to re-fetch the manifest -->
-    <link rel="manifest" href="manifest.json?v=force_update_final">
+    <link rel="manifest" href="./manifest.json?v=ios_fix_final_v2">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,6 +67,7 @@
 </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <!-- CRITICAL FIX: Changed /index.tsx to ./index.tsx to fix white screen on GitHub Pages -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>

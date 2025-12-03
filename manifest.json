@@ -1,0 +1,15 @@
+{
+  "short_name": "IdeaPops",
+  "name": "IdeaPops Inspiration",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#FDFBFF",
+  "background_color": "#FDFBFF"
+}
